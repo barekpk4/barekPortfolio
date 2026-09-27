@@ -1,0 +1,247 @@
+<!-- ===============================
+     CONTACT PAGE
+================================ -->
+
+<section class="contact-page">
+
+    <!-- ================= CONTACT HERO ================= -->
+    <div class="contact-hero">
+
+        <span class="contact-tag">GET IN TOUCH</span>
+
+        <h1>
+            Let's Build Something
+            <span>Great Together.</span>
+        </h1>
+
+        <p>
+            Have a project, job opportunity, or an idea you'd like to discuss?
+            Feel free to reach out. I'd love to hear from you.
+        </p>
+
+    </div>
+
+
+    <!-- ================= CONTACT CONTENT ================= -->
+    <div class="contact-container">
+
+
+        <!-- ================= LEFT SIDE ================= -->
+        <div class="contact-info">
+
+            <h2>Let's Work Together</h2>
+
+            <p class="contact-description">
+                I'm always open to discussing new projects, creative ideas,
+                or opportunities to be part of your team.
+            </p>
+
+
+            <!-- EMAIL -->
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    <i class="bi bi-envelope-fill"></i>
+                </div>
+
+                <div>
+                    <span>Email</span>
+
+                    <a href="mailto:your@email.com">
+                        hellof@email.com
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- PHONE -->
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    <i class="bi bi-telephone-fill"></i>
+                </div>
+
+                <div>
+                    <span>Phone</span>
+
+                    <a href="tel:+8801XXXXXXX">
+                        +880 1XXXXXX582
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- LOCATION -->
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    <i class="bi bi-geo-alt-fill"></i>
+                </div>
+
+                <div>
+                    <span>Location</span>
+
+                    <p>Bangladesh</p>
+                </div>
+
+            </div>
+
+
+            <!-- SOCIAL LINKS -->
+            <div class="contact-social">
+
+                <span>Connect with me</span>
+
+                <div class="social-links">
+
+                    <!-- LinkedIn -->
+                    <a href="#" target="_blank" aria-label="LinkedIn">
+
+                        <i class="bi bi-linkedin"></i>
+
+                    </a>
+
+
+                    <!-- GitHub -->
+                    <a href="#" target="_blank" aria-label="GitHub">
+
+                        <i class="bi bi-github"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= RIGHT SIDE ================= -->
+
+        <div class="contact-form-wrapper">
+
+            <h2>Send Me a Message</h2>
+
+            <form [formGroup]="contactFormDemo" (ngSubmit)="onSubmit()" novalidate>
+
+                <div class="row">
+
+                    <!-- NAME -->
+                    <div class="col-md-6 mb-3">
+
+                        <input type="text" class="form-control" id="yourName" formControlName="yourName"
+                            placeholder="Your Name" [class.is-invalid]="f['yourName'].touched && f['yourName'].invalid"
+                            autocomplete="name">
+
+                        @if (f['yourName'].touched && f['yourName'].invalid) {
+                        <small class="validation-error">
+                            @if (f['yourName'].errors?.['required']) {
+                            Name is required.
+                            } @else if (f['yourName'].errors?.['minlength']) {
+                            Name must be at least 2 characters.
+                            }
+                        </small>
+                        }
+
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="col-md-6 mb-3">
+
+                        <input type="email" class="form-control" id="email" formControlName="email"
+                            placeholder="Email Address" [class.is-invalid]="f['email'].touched && f['email'].invalid"
+                            autocomplete="email">
+
+                        @if (f['email'].touched && f['email'].invalid) {
+                        <small class="validation-error">
+                            @if (f['email'].errors?.['required']) {
+                            Email is required.
+                            } @else if (f['email'].errors?.['email']) {
+                            Please enter a valid email address.
+                            }
+                        </small>
+                        }
+
+                    </div>
+
+                    <!-- PHONE -->
+                    <div class="col-12 mb-3">
+
+                        <input type="tel" class="form-control" id="phone" formControlName="phone"
+                            placeholder="Phone Number (01XXXXXXXXX)"
+                            [class.is-invalid]="f['phone'].touched && f['phone'].invalid" autocomplete="tel">
+
+                        @if (f['phone'].touched && f['phone'].invalid) {
+                        <small class="validation-error">
+                            @if (f['phone'].errors?.['required']) {
+                            Phone number is required.
+                            } @else if (f['phone'].errors?.['pattern']) {
+                            Enter a valid Bangladeshi mobile number.
+                            }
+                        </small>
+                        }
+
+                    </div>
+
+                    <!-- SUBJECT -->
+                    <div class="col-12 mb-3">
+
+                        <input type="text" class="form-control" id="subject" formControlName="subject"
+                            placeholder="Subject" [class.is-invalid]="f['subject'].touched && f['subject'].invalid">
+
+                        @if (f['subject'].touched && f['subject'].invalid) {
+                        <small class="validation-error">
+                            @if (f['subject'].errors?.['required']) {
+                            Subject is required.
+                            } @else if (f['subject'].errors?.['minlength']) {
+                            Subject must be at least 3 characters.
+                            }
+                        </small>
+                        }
+
+                    </div>
+
+                    <!-- MESSAGE -->
+                    <div class="col-12 mb-3">
+
+                        <textarea class="form-control" rows="5" id="message" formControlName="message"
+                            placeholder="Write Your Message"
+                            [class.is-invalid]="f['message'].touched && f['message'].invalid"></textarea>
+
+                        @if (f['message'].touched && f['message'].invalid) {
+                        <small class="validation-error">
+                            @if (f['message'].errors?.['required']) {
+                            Message is required.
+                            } @else if (f['message'].errors?.['minlength']) {
+                            Message must be at least 10 characters.
+                            }
+                        </small>
+                        }
+
+                    </div>
+
+                    <!-- BUTTONS -->
+                    <div class="col-12 d-flex flex-wrap gap-2">
+
+                        <button class="btn saveButton btn-primary" type="submit" [disabled]="isSending">
+                            {{ btnStatus }}
+                            <i class="bi bi-send-fill"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-warning" (click)="reset()" [disabled]="isSending">
+                            Reset
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>

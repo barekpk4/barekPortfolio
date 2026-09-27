@@ -1,0 +1,570 @@
+/* ===============================
+   ABOUT PAGE
+================================ */
+
+.about-page {
+  min-height: calc(100vh - 70px);
+  background: #070d1d;
+  color: #d9e2f2;
+  padding: 30px 4%;
+}
+
+
+/* ===============================
+   MAIN SECTION
+================================ */
+
+.about-section {
+  max-width: 1450px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 45px;
+  align-items: start;
+}
+
+
+/* ===============================
+   PROFILE AREA
+================================ */
+
+.profile-area {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding-top: 35px;
+}
+
+
+/* ===============================
+   PROFILE IMAGE
+================================ */
+
+.profile-image-wrapper {
+  position: relative;
+  width: 270px;
+  min-width: 270px;
+  height: 270px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-glow {
+  position: absolute;
+  width: 290px;
+  height: 290px;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(42, 111, 255, 0.20),
+    transparent 65%
+  );
+}
+
+.profile-image {
+  position: relative;
+
+  width: 270px;
+  height: 270px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 1px solid #2875ff;
+
+  box-shadow:
+    0 0 0 1px rgba(42, 117, 255, 0.2),
+    0 0 35px rgba(42, 117, 255, 0.18);
+}
+
+
+/* ===============================
+   ABOUT CONTENT
+================================ */
+
+.profile-content {
+  max-width: 460px;
+}
+
+.section-label {
+  color: #3780ff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.profile-content h1 {
+  margin: 14px 0 18px;
+
+  color: #f4f7fc;
+
+  font-size: 40px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.about-description {
+  color: #9baac2;
+
+  font-size: 16px;
+  line-height: 1.8;
+
+  margin-bottom: 28px;
+}
+
+
+/* ===============================
+   PERSONAL INFO
+================================ */
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.info-item {
+  display: grid;
+  grid-template-columns: 22px 75px auto;
+  align-items: center;
+
+  color: #aebbd0;
+
+  font-size: 14px;
+}
+
+.info-title {
+  color: #dfe7f5;
+  font-weight: 600;
+}
+
+.info-icon {
+  color: #3980ff;
+  font-size: 17px;
+}
+
+
+/* ===============================
+   RIGHT CONTENT
+================================ */
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.top-cards {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 18px;
+}
+
+
+/* ===============================
+   GLASS CARD
+================================ */
+
+.glass-card {
+  background: rgba(14, 24, 45, 0.65);
+
+  border: 1px solid #1d304f;
+
+  border-radius: 14px;
+
+  padding: 22px;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.015),
+    0 10px 30px rgba(0,0,0,0.12);
+}
+
+
+/* ===============================
+   CARD TITLE
+================================ */
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-title h2 {
+  margin: 0;
+
+  font-size: 20px;
+  color: #f2f5fb;
+}
+
+.title-icon {
+  color: #3980ff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.title-line {
+  width: 20px;
+  height: 2px;
+
+  background: #3980ff;
+
+  margin: 14px 0 22px;
+}
+
+
+/* ===============================
+   SKILLS
+================================ */
+
+.skill-item {
+  margin-bottom: 19px;
+}
+
+.skill-item:last-child {
+  margin-bottom: 0;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+
+  color: #dce5f3;
+
+  font-size: 14px;
+}
+
+.skill-header span:last-child {
+  color: #9ba9bd;
+}
+
+.progress {
+  width: 100%;
+  height: 7px;
+
+  overflow: hidden;
+
+  background: #16243d;
+
+  border-radius: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #266cff,
+    #4c8cff
+  );
+
+  box-shadow: 0 0 10px rgba(48, 117, 255, 0.25);
+}
+
+
+/* ===============================
+   TECHNOLOGIES
+================================ */
+
+.technology-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px 12px;
+}
+
+.technology-item {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 7px;
+
+  text-align: center;
+
+  color: #d5deed;
+
+  font-size: 12px;
+}
+
+.tech-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  font-weight: 700;
+
+  font-size: 17px;
+
+  border: 1px solid rgba(255,255,255,0.04);
+
+  background: #111c32;
+}
+
+
+/* Technology icon styles */
+
+.dotnet {
+  color: #fff;
+  background: #4327a8;
+}
+
+.csharp {
+  color: #fff;
+  background: #7030b6;
+}
+
+.aspnet {
+  color: #fff;
+  background: #0872b9;
+  font-size: 11px;
+}
+
+.angular {
+  color: #fff;
+  background: #e52b20;
+  font-size: 24px;
+}
+
+.sql {
+  color: #fff;
+  background: #19233b;
+  font-size: 12px;
+}
+
+.html {
+  color: #fff;
+  background: #e44d26;
+  font-size: 24px;
+}
+
+.css {
+  color: #fff;
+  background: #2475b9;
+  font-size: 24px;
+}
+
+.bootstrap {
+  color: #fff;
+  background: #6535a8;
+  font-size: 24px;
+}
+
+.git {
+  color: #ff6336;
+  background: #161f32;
+}
+
+.github {
+  color: #fff;
+  background: #161f32;
+}
+
+.vscode {
+  color: #42a5f5;
+  background: #142238;
+  font-size: 14px;
+}
+
+.postman {
+  color: #ff6c37;
+  background: #161f32;
+  font-size: 22px;
+}
+
+
+/* ===============================
+   STATS
+================================ */
+
+.stats-card {
+  min-height: 125px;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1px
+    1fr
+    1px
+    1fr
+    1px
+    1fr;
+
+  align-items: center;
+
+  background: rgba(14, 24, 45, 0.65);
+
+  border: 1px solid #1d304f;
+
+  border-radius: 14px;
+
+  padding: 20px 15px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  gap: 5px;
+}
+
+.stat-icon {
+  color: #3980ff;
+
+  font-size: 21px;
+
+  margin-bottom: 2px;
+}
+
+.stat-item strong {
+  color: #347dff;
+
+  font-size: 27px;
+
+  line-height: 1;
+}
+
+.stat-item span {
+  color: #aab8cd;
+
+  font-size: 13px;
+}
+
+.stat-divider {
+  height: 58px;
+
+  background: #263653;
+}
+
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1200px) {
+
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-area {
+    justify-content: center;
+  }
+
+  .profile-content {
+    max-width: 600px;
+  }
+
+  .right-content {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 850px) {
+
+  .profile-area {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .personal-info {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .top-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 650px) {
+
+  .about-page {
+    padding: 35px 18px;
+  }
+
+  .profile-image-wrapper,
+  .profile-image {
+    width: 220px;
+    height: 220px;
+    min-width: 220px;
+  }
+
+  .profile-glow {
+    width: 240px;
+    height: 240px;
+  }
+
+  .profile-content h1 {
+    font-size: 32px;
+  }
+
+  .about-description {
+    font-size: 14px;
+  }
+
+  .technology-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .stats-card {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+
+  .stat-item strong {
+    font-size: 23px;
+  }
+}
+
+
+@media (max-width: 420px) {
+
+  .technology-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-item {
+    grid-template-columns: 22px 65px auto;
+
+    font-size: 13px;
+  }
+
+  .stats-card {
+    grid-template-columns: 1fr;
+  }
+}

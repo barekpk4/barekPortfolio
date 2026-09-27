@@ -1,0 +1,944 @@
+/* =========================================
+   EXPERIENCE PAGE
+========================================= */
+
+.experience-page {
+  min-height: calc(100vh - 70px);
+
+  background:
+    radial-gradient(
+      circle at 80% 15%,
+      rgba(30, 95, 220, 0.08),
+      transparent 25%
+    ),
+    #060c1b;
+
+  color: #dbe5f4;
+
+  padding: 20px 4% 35px;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.experience-hero {
+  max-width: 1400px;
+
+  margin: 0 auto 45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  min-height: 190px;
+}
+
+.experience-hero .hero-content {
+  max-width: 560px;
+}
+
+.experience-hero .section-label {
+  color: #3980ff;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.6px;
+}
+
+.experience-hero .hero-content h1 {
+  margin: 10px 0 15px;
+
+  color: #f5f7fb;
+
+  font-size: 48px;
+
+  line-height: 1;
+
+  font-weight: 700;
+}
+
+.experience-hero .hero-content h1 span {
+  color: #3279ff;
+}
+
+.experience-hero .hero-content p {
+  max-width: 550px;
+
+  color: #9baac1;
+
+  font-size: 15px;
+
+  line-height: 1.75;
+
+  margin: 0;
+}
+
+
+/* =========================================
+   EXPERIENCE ILLUSTRATION
+========================================= */
+
+.experience-illustration {
+  width: 350px;
+  height: 220px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.illustration-glow {
+  position: absolute;
+
+  width: 210px;
+  height: 210px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(35, 106, 255, 0.22),
+      transparent 68%
+    );
+}
+
+.developer-icon {
+  position: relative;
+
+  width: 180px;
+  height: 180px;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  border: 3px solid #3980ff;
+
+  background:
+    radial-gradient(
+      circle,
+      #10264b,
+      #08152d
+    );
+
+  color: #3980ff;
+
+  font-size: 54px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 0 20px rgba(57, 128, 255, 0.35),
+    0 0 45px rgba(57, 128, 255, 0.15);
+}
+
+
+/* =========================================
+   FLOATING ICONS
+========================================= */
+
+.experience-illustration .floating-icon {
+  position: absolute;
+
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  border: 1px solid #234b8e;
+
+  background: #0c1830;
+
+  color: #3980ff;
+
+  font-size: 20px;
+
+  box-shadow:
+    0 0 20px rgba(40, 110, 255, 0.12);
+
+  z-index: 3;
+}
+
+.experience-icon-one {
+  top: 30px;
+  left: 40px;
+}
+
+.experience-icon-two {
+  top: 5px;
+  right: 45px;
+}
+
+.experience-icon-three {
+  bottom: 20px;
+  left: 20px;
+}
+
+
+/* =========================================
+   COMMON CARDS
+========================================= */
+
+.experience-journey,
+.experience-grid,
+.highlights-card,
+.what-i-bring-card {
+  max-width: 1400px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.journey-card,
+.info-card,
+.highlights-card,
+.what-i-bring-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(13, 25, 48, 0.72),
+      rgba(8, 17, 34, 0.72)
+    );
+
+  border: 1px solid #1a3153;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.12);
+
+  backdrop-filter: blur(8px);
+}
+
+
+/* =========================================
+   CARD HEADING
+========================================= */
+
+.experience-page .card-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.experience-page .card-heading h2 {
+  margin: 0;
+
+  color: #f0f4fb;
+
+  font-size: 20px;
+
+  font-weight: 600;
+}
+
+.experience-page .heading-icon {
+  color: #3980ff;
+
+  font-size: 21px;
+}
+
+
+/* =========================================
+   PROFESSIONAL JOURNEY
+========================================= */
+
+.experience-journey {
+  padding: 20px 38px 30px;
+  margin-top: -20px;
+  margin-bottom: 18px;
+}
+
+.experience-timeline {
+  position: relative;
+
+  margin-top: 35px;
+
+  padding-bottom: 5px;
+}
+
+.experience-timeline::before {
+  content: "";
+
+  position: absolute;
+
+  top: 42px;
+
+  left: 7%;
+
+  width: 86%;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #2169e9,
+      #3980ff,
+      #2169e9
+    );
+}
+
+.experience-item {
+  position: relative;
+
+  text-align: center;
+
+  padding: 0 40px;
+}
+
+.experience-date {
+  display: inline-block;
+
+  padding: 6px 12px;
+
+  border-radius: 6px;
+
+  color: #3d86ff;
+
+  font-size: 13px;
+
+  background: rgba(28, 80, 170, 0.14);
+
+  border: 1px solid rgba(47, 111, 230, 0.3);
+
+  margin-bottom: 12px;
+}
+
+.experience-dot {
+  position: absolute;
+
+  top: 38px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+
+  background: #071225;
+
+  border: 3px solid #3980ff;
+
+  box-shadow:
+    0 0 0 5px rgba(57, 128, 255, 0.08);
+
+  z-index: 2;
+}
+
+.experience-content {
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  padding-top: 35px;
+}
+
+.experience-icon {
+  width: 55px;
+  height: 55px;
+
+  margin: 0 auto 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #0b1c3b;
+
+  border: 1px solid #2667c7;
+
+  color: #3980ff;
+
+  font-size: 21px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 0 15px rgba(43, 116, 255, 0.12);
+}
+
+.experience-main h3 {
+  margin: 0 0 6px;
+
+  color: #f0f4fb;
+
+  font-size: 19px;
+
+  font-weight: 600;
+}
+
+.experience-company {
+  display: block;
+
+  color: #3980ff;
+
+  font-size: 13px;
+
+  margin-bottom: 12px;
+}
+
+.experience-description {
+  max-width: 680px;
+
+  margin: 0 auto 16px;
+
+  color: #8797b0;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+.experience-tags {
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.experience-tags span {
+  padding: 6px 10px;
+
+  border-radius: 5px;
+
+  color: #b8c8df;
+
+  background: rgba(18, 35, 63, 0.7);
+
+  border: 1px solid #203553;
+
+  font-size: 11px;
+}
+
+
+/* =========================================
+   RESPONSIBILITIES + TECHNOLOGIES
+========================================= */
+
+.experience-grid {
+  margin-bottom: 18px;
+
+  display: grid;
+
+  grid-template-columns: 1.1fr 1fr;
+
+  gap: 18px;
+}
+
+.experience-grid .info-card {
+  padding: 24px 22px;
+}
+
+
+/* =========================================
+   RESPONSIBILITIES
+========================================= */
+
+.responsibility-list {
+  margin-top: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+.responsibility-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 13px;
+}
+
+.responsibility-icon {
+  min-width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 8px;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+.responsibility-item h3 {
+  margin: 1px 0 5px;
+
+  color: #eaf0f8;
+
+  font-size: 14px;
+}
+
+.responsibility-item p {
+  margin: 0;
+
+  color: #8797b0;
+
+  font-size: 12px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================
+   ICON COLORS
+========================================= */
+
+.blue {
+  color: #4291ff;
+
+  background: rgba(43, 115, 230, 0.14);
+}
+
+.purple {
+  color: #b55cff;
+
+  background: rgba(130, 47, 220, 0.16);
+}
+
+.green {
+  color: #46d4a0;
+
+  background: rgba(42, 183, 127, 0.14);
+}
+
+.orange {
+  color: #ff9a32;
+
+  background: rgba(232, 115, 30, 0.14);
+}
+
+.cyan {
+  color: #45c7e8;
+
+  background: rgba(38, 159, 190, 0.14);
+}
+
+
+/* =========================================
+   EXPERIENCE TECHNOLOGIES
+========================================= */
+
+.experience-tech-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px 12px;
+
+  margin-top: 20px;
+}
+
+.experience-tech-item {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 7px;
+
+  text-align: center;
+
+  color: #d5deed;
+
+  font-size: 12px;
+}
+
+.experience-tech-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 9px;
+
+  font-weight: 700;
+
+  font-size: 16px;
+
+  border: 1px solid rgba(255,255,255,0.04);
+
+  background: #111c32;
+}
+
+.experience-tech-icon.dotnet {
+  color: white;
+
+  background: #4327a8;
+}
+
+.experience-tech-icon.csharp {
+  color: white;
+
+  background: #7030b6;
+}
+
+.experience-tech-icon.aspnet {
+  color: white;
+
+  background: #0872b9;
+
+  font-size: 11px;
+}
+
+.experience-tech-icon.angular {
+  color: white;
+
+  background: #e52b20;
+
+  font-size: 24px;
+}
+
+.experience-tech-icon.sql {
+  color: white;
+
+  background: #19233b;
+
+  font-size: 12px;
+}
+
+.experience-tech-icon.dapper {
+  color: #65b7ff;
+
+  background: #102b47;
+}
+
+.experience-tech-icon.bootstrap {
+  color: white;
+
+  background: #6535a8;
+
+  font-size: 24px;
+}
+
+.experience-tech-icon.git {
+  color: #ff6336;
+
+  background: #161f32;
+}
+
+
+/* =========================================
+   PROFESSIONAL HIGHLIGHTS
+========================================= */
+
+.highlights-card {
+  padding: 23px 20px;
+
+  margin-bottom: 18px;
+}
+
+.highlight-grid {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1px
+    1fr
+    1px
+    1fr
+    1px
+    1fr;
+
+  align-items: center;
+
+  margin-top: 20px;
+}
+
+.highlight-item {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+
+  gap: 5px;
+}
+
+.highlight-icon {
+  color: #3980ff;
+
+  font-size: 21px;
+
+  margin-bottom: 2px;
+}
+
+.highlight-item strong {
+  color: #347dff;
+
+  font-size: 25px;
+
+  line-height: 1;
+}
+
+.highlight-item span {
+  color: #aab8cd;
+
+  font-size: 12px;
+}
+
+.highlight-divider {
+  height: 58px;
+
+  background: #263653;
+}
+
+
+/* =========================================
+   WHAT I BRING
+========================================= */
+
+.what-i-bring-card {
+  padding: 23px 20px;
+}
+
+.bring-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+
+  margin-top: 20px;
+}
+
+.bring-item {
+  padding: 18px;
+
+  text-align: center;
+
+  border-radius: 8px;
+
+  background: rgba(10, 24, 47, 0.7);
+
+  border: 1px solid #1a3151;
+
+  transition: 0.25s ease;
+}
+
+.bring-item:hover {
+  transform: translateY(-3px);
+
+  border-color: #2d6ed5;
+
+  box-shadow:
+    0 8px 20px rgba(25, 91, 190, 0.1);
+}
+
+.bring-icon {
+  width: 45px;
+  height: 45px;
+
+  margin: 0 auto 11px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 8px;
+
+  font-size: 18px;
+
+  font-weight: 700;
+}
+
+.bring-item h3 {
+  margin: 0 0 6px;
+
+  color: #eaf0f8;
+
+  font-size: 14px;
+}
+
+.bring-item p {
+  max-width: 240px;
+
+  margin: 0 auto;
+
+  color: #8797b0;
+
+  font-size: 12px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .experience-hero {
+    padding: 0 20px;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-tech-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+@media (max-width: 850px) {
+
+  .experience-hero {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .experience-illustration {
+    width: 100%;
+
+    height: 180px;
+  }
+
+  .experience-timeline::before {
+    display: none;
+  }
+
+  .experience-item {
+    padding: 0;
+  }
+
+  .experience-dot {
+    display: none;
+  }
+
+  .experience-content {
+    padding-top: 20px;
+  }
+
+  .experience-description {
+    max-width: 600px;
+  }
+
+  .bring-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 650px) {
+
+  .experience-page {
+    padding: 30px 16px;
+  }
+
+  .experience-hero .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .experience-journey,
+  .experience-grid .info-card,
+  .highlights-card,
+  .what-i-bring-card {
+    padding: 20px 15px;
+  }
+
+  .experience-main h3 {
+    font-size: 17px;
+  }
+
+  .experience-description {
+    font-size: 12px;
+  }
+
+  .experience-tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px 10px;
+  }
+
+  .highlight-grid {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+  }
+
+  .highlight-divider {
+    display: none;
+  }
+
+  .highlight-item strong {
+    font-size: 22px;
+  }
+}
+
+
+@media (max-width: 420px) {
+
+  .experience-tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-tags span {
+    font-size: 10px;
+  }
+
+  .experience-main h3 {
+    font-size: 16px;
+  }
+}

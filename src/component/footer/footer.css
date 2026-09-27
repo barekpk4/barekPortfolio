@@ -1,0 +1,124 @@
+/* ================================
+   MINI FOOTER
+================================ */
+
+.mini-footer {
+  width: 100%;
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+  background: #0b1120;
+}
+
+.footer-content {
+  width: min(1180px, 90%);
+  min-height: 65px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  color: #64748b;
+  font-size: 13px;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-content strong {
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.footer-dot {
+  margin: 0 8px;
+
+  color: #3b82f6;
+}
+
+
+.footer-mark {
+  position: relative;
+
+  width: 30px;
+  height: 28px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #64748b;
+
+  transition: 0.3s ease;
+}
+
+.notebook-icon {
+  position: absolute;
+
+  left: 2px;
+  bottom: 1px;
+
+  font-size: 21px;
+
+  transition: 0.3s ease;
+}
+
+.pencil-icon {
+  position: absolute;
+
+  right: -1px;
+  top: -1px;
+
+  font-size: 14px;
+
+  color: #3b82f6;
+
+  transform: rotate(-25deg);
+
+  transition: 0.3s ease;
+}
+
+
+.footer-mark:hover .notebook-icon {
+  color: #94a3b8;
+
+  transform: translateY(-2px);
+}
+
+
+.footer-mark:hover .pencil-icon {
+  color: #60a5fa;
+
+  transform:
+    rotate(-25deg)
+    translateY(-2px);
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 576px) {
+
+  .footer-content {
+    min-height: 80px;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    text-align: center;
+  }
+
+  .footer-divider {
+    display: none;
+  }
+
+  .footer-social {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 4px;
+  }
+}

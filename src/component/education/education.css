@@ -1,0 +1,875 @@
+/* =========================================
+   EDUCATION PAGE
+========================================= */
+
+.education-page {
+  min-height: calc(100vh - 70px);
+
+  background:
+    radial-gradient(
+      circle at 80% 15%,
+      rgba(30, 95, 220, 0.08),
+      transparent 25%
+    ),
+    #060c1b;
+
+  color: #dbe5f4;
+
+  padding: 20px 4% 35px;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.education-hero {
+  max-width: 1400px;
+
+  margin: 0 auto 45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  min-height: 190px;
+}
+
+.hero-content {
+  max-width: 560px;
+}
+
+.section-label {
+  color: #3980ff;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.6px;
+}
+
+.hero-content h1 {
+  margin: 10px 0 15px;
+
+  color: #f5f7fb;
+
+  font-size: 48px;
+
+  line-height: 1;
+
+  font-weight: 700;
+}
+
+.hero-content h1 span {
+  color: #3279ff;
+}
+
+.hero-content p {
+  max-width: 550px;
+
+  color: #9baac1;
+
+  font-size: 15px;
+
+  line-height: 1.75;
+
+  margin: 0;
+}
+
+
+/* =========================================
+   EDUCATION ILLUSTRATION
+========================================= */
+
+.education-illustration {
+  width: 350px;
+  height: 220px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.illustration-glow {
+  position: absolute;
+
+  width: 210px;
+  height: 210px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(35, 106, 255, 0.22),
+      transparent 68%
+    );
+}
+
+.graduation-cap {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  border: 3px solid #3980ff;
+
+  box-shadow:
+    0 0 20px rgba(57, 128, 255, 0.35),
+    0 0 45px rgba(57, 128, 255, 0.15);
+}
+
+.graduation-cap img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  display: block;
+}
+
+.floating-icon {
+  position: absolute;
+
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  border: 1px solid #234b8e;
+
+  background: #0c1830;
+
+  color: #3980ff;
+
+  font-size: 20px;
+
+  box-shadow:
+    0 0 20px rgba(40, 110, 255, 0.12);
+}
+
+.icon-one {
+  top: 30px;
+  left: 40px;
+}
+
+.icon-two {
+  top: 5px;
+  right: 45px;
+}
+
+.icon-three {
+  bottom: 20px;
+  left: 20px;
+}
+
+
+/* =========================================
+   COMMON CARD
+========================================= */
+
+.journey-card,
+.info-card,
+.learning-card {
+  max-width: 1400px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(13, 25, 48, 0.72),
+      rgba(8, 17, 34, 0.72)
+    );
+
+  border: 1px solid #1a3153;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.12);
+
+  backdrop-filter: blur(8px);
+}
+
+
+/* =========================================
+   CARD HEADING
+========================================= */
+
+.card-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.card-heading h2 {
+  margin: 0;
+
+  color: #f0f4fb;
+
+  font-size: 20px;
+
+  font-weight: 600;
+}
+
+.heading-icon {
+  color: #3980ff;
+
+  font-size: 21px;
+}
+
+
+/* =========================================
+   EDUCATION JOURNEY
+========================================= */
+
+.journey-card {
+  padding: 20px 38px 30px;
+
+  margin-bottom: 18px;
+}
+
+.timeline {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-top: 35px;
+}
+
+.timeline::before {
+  content: "";
+
+  position: absolute;
+
+  top: 42px;
+
+  left: 5%;
+
+  width: 90%;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #2169e9,
+      #3980ff,
+      #2169e9
+    );
+}
+
+.timeline-item {
+  position: relative;
+
+  text-align: center;
+
+  min-height: 225px;
+
+  padding: 0 30px;
+}
+
+.timeline-date {
+  display: inline-block;
+
+  padding: 6px 11px;
+
+  border-radius: 6px;
+
+  color: #3d86ff;
+
+  font-size: 13px;
+
+  background: rgba(28, 80, 170, 0.14);
+
+  border: 1px solid rgba(47, 111, 230, 0.3);
+
+  margin-bottom: 12px;
+}
+
+.timeline-dot {
+  position: absolute;
+
+  top: 38px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+
+  background: #071225;
+
+  border: 3px solid #3980ff;
+
+  box-shadow:
+    0 0 0 5px rgba(57, 128, 255, 0.08);
+
+  z-index: 2;
+}
+
+.timeline-content {
+  padding-top: 35px;
+
+  border-right: 1px solid #253653;
+
+  min-height: 180px;
+}
+
+.timeline-item:last-child
+.timeline-content {
+  border-right: none;
+}
+
+.education-icon {
+  width: 50px;
+  height: 50px;
+
+  margin: 0 auto 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #0b1c3b;
+
+  border: 1px solid #2667c7;
+
+  color: #3980ff;
+
+  font-size: 22px;
+
+  box-shadow:
+    0 0 15px rgba(43, 116, 255, 0.12);
+}
+
+.timeline-content h3 {
+  margin: 0 0 7px;
+
+  color: #f0f4fb;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+}
+
+.education-subtitle {
+  display: block;
+
+  color: #3980ff;
+
+  font-size: 13px;
+
+  margin-bottom: 13px;
+}
+
+.result {
+  display: inline-block;
+
+  padding: 8px 13px;
+
+  border-radius: 6px;
+
+  color: #dbe4f2;
+
+  background: rgba(18, 35, 63, 0.7);
+
+  border: 1px solid #203553;
+
+  font-size: 12px;
+}
+
+.description-result {
+  max-width: 210px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   CERTIFICATION + ACHIEVEMENT GRID
+========================================= */
+
+.education-grid {
+  max-width: 1400px;
+
+  margin: 0 auto 18px;
+
+  display: grid;
+
+  grid-template-columns: 1.1fr 1fr;
+
+  gap: 18px;
+}
+
+.info-card {
+  padding: 24px 22px;
+}
+
+
+/* =========================================
+   CERTIFICATES
+========================================= */
+
+.certificate-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+
+  margin-top: 20px;
+}
+
+.certificate-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 10px;
+
+  border-radius: 8px;
+
+  background: rgba(13, 28, 53, 0.6);
+
+  border: 1px solid #1a3152;
+
+  transition: 0.25s ease;
+}
+
+.certificate-item:hover {
+  border-color: #2e6ed3;
+
+  transform: translateY(-2px);
+}
+
+.certificate-icon {
+  min-width: 44px;
+  height: 44px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 7px;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+.livestock {
+  background: rgba(30, 160, 120, 0.16);
+  color: #46c7a0;
+}
+
+.api {
+  background: rgba(125, 46, 192, 0.16);
+  color: #b55cff;
+}
+
+.angular {
+  background: rgba(232, 94, 25, 0.16);
+  color: #ff8a35;
+}
+
+.sql {
+  background: rgba(28, 108, 220, 0.16);
+  color: #4593ff;
+}
+
+.certificate-info {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.certificate-info h3 {
+  margin: 0 0 4px;
+
+  color: #e9eef7;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.certificate-info p {
+  margin: 0;
+
+  color: #8494ad;
+
+  font-size: 11px;
+}
+
+.status {
+  color: #a9b7cb;
+
+  font-size: 11px;
+
+  white-space: nowrap;
+}
+
+.certificate-button {
+  display: block;
+
+  margin: 16px auto 0;
+
+  padding: 8px 18px;
+
+  background: transparent;
+
+  color: #3980ff;
+
+  border: 1px solid #2871df;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+
+  transition: 0.25s ease;
+}
+
+.certificate-button span {
+  margin-left: 7px;
+}
+
+.certificate-button:hover {
+  background: #2168d6;
+
+  color: white;
+}
+
+
+/* =========================================
+   ACHIEVEMENTS
+========================================= */
+
+.achievement-list {
+  margin-top: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 17px;
+}
+
+.achievement-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 14px;
+}
+
+.achievement-icon {
+  min-width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 8px;
+
+  font-size: 18px;
+}
+
+.purple {
+  color: #b55cff;
+  background: rgba(130, 47, 220, 0.16);
+}
+
+.green {
+  color: #46d4a0;
+  background: rgba(42, 183, 127, 0.14);
+}
+
+.orange {
+  color: #ff9a32;
+  background: rgba(232, 115, 30, 0.14);
+}
+
+.blue {
+  color: #4291ff;
+  background: rgba(43, 115, 230, 0.14);
+}
+
+.achievement-item h3 {
+  margin: 1px 0 5px;
+
+  color: #eaf0f8;
+
+  font-size: 14px;
+}
+
+.achievement-item p {
+  margin: 0;
+
+  color: #8797b0;
+
+  font-size: 12px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================
+   CURRENTLY LEARNING
+========================================= */
+
+.learning-card {
+  padding: 23px 20px;
+}
+
+.learning-grid {
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+
+  gap: 18px;
+
+  margin-top: 20px;
+}
+
+.learning-item {
+  min-height: 95px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  border-radius: 8px;
+
+  background: rgba(10, 24, 47, 0.7);
+
+  border: 1px solid #1a3151;
+
+  transition: 0.25s ease;
+}
+
+.learning-item:hover {
+  transform: translateY(-3px);
+
+  border-color: #2d6ed5;
+
+  box-shadow:
+    0 8px 20px rgba(25, 91, 190, 0.1);
+}
+
+.learning-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 7px;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+.learning-item span {
+  color: #d8e1ef;
+
+  font-size: 12px;
+}
+
+.learning-icon.dotnet {
+  color: white;
+  background: #4327a8;
+}
+
+.learning-icon.blazor {
+  color: #b06cff;
+  background: #27134a;
+}
+
+.learning-icon.clean {
+  color: #7bd33f;
+  background: #172d18;
+}
+
+.learning-icon.micro {
+  color: #5fa5ff;
+  background: #102a4d;
+}
+
+.learning-icon.docker {
+  color: #3da9ff;
+  background: #102e4d;
+}
+
+.learning-icon.azure {
+  color: #48a8ff;
+  background: #102b47;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .education-hero {
+    padding: 0 20px;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .learning-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (max-width: 850px) {
+
+  .education-hero {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .education-illustration {
+    width: 100%;
+
+    height: 180px;
+  }
+
+  .timeline {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline-item {
+    min-height: auto;
+
+    padding: 0;
+  }
+
+  .timeline-dot {
+    display: none;
+  }
+
+  .timeline-content {
+    border-right: none;
+
+    border-bottom: 1px solid #253653;
+
+    padding-bottom: 25px;
+  }
+
+  .timeline-item:last-child
+  .timeline-content {
+    border-bottom: none;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .education-page {
+    padding: 30px 16px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .journey-card,
+  .info-card,
+  .learning-card {
+    padding: 20px 15px;
+  }
+
+  .certificate-item {
+    align-items: flex-start;
+  }
+
+  .status {
+    display: none;
+  }
+
+  .learning-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+  }
+}
+
+
+@media (max-width: 400px) {
+
+  .learning-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .certificate-info h3 {
+    font-size: 11px;
+  }
+}
