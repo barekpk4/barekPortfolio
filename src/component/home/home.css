@@ -370,16 +370,23 @@
 }
 
 
+
 /* ================================
    RESPONSIVE
 ================================ */
 
+/* ---------- Tablet / Small Laptop ---------- */
+
 @media (max-width: 992px) {
 
-  .hero-container {
-    grid-template-columns: 1fr;
-    gap: 50px;
+  .hero {
+    min-height: auto;
+  }
 
+  .hero-container {
+    width: min(720px, 92%);
+    grid-template-columns: 1fr;
+    gap: 60px;
     padding: 80px 0;
   }
 
@@ -398,10 +405,16 @@
   }
 
   .hero-visual {
+    width: 100%;
     min-height: 400px;
   }
 
   .code-card {
+    width: min(480px, 100%);
+    transform: none;
+  }
+
+  .code-card:hover {
     transform: none;
   }
 
@@ -415,55 +428,225 @@
 }
 
 
+/* ---------- Mobile ---------- */
+
 @media (max-width: 576px) {
+
+  .hero {
+    min-height: auto;
+    overflow: hidden;
+  }
 
   .hero-container {
     width: 92%;
-    padding: 60px 0;
+    padding: 55px 0 70px;
+    gap: 45px;
+  }
+
+  /* Hero Text */
+
+  .hero-greeting {
+    font-size: 16px;
+    margin-bottom: 10px;
   }
 
   .hero-content h1 {
-    font-size: 42px;
+    font-size: clamp(34px, 10vw, 42px);
+    line-height: 1.1;
+    letter-spacing: -1px;
+    word-break: keep-all;
   }
 
   .hero-content h2 {
-    font-size: 28px;
+    margin: 10px 0 18px;
+    font-size: clamp(24px, 7vw, 28px);
   }
 
   .hero-description {
+    max-width: 100%;
+    margin-bottom: 26px;
+
     font-size: 15px;
+    line-height: 1.7;
   }
 
-  .code-body {
-    padding: 20px;
 
+  /* Buttons */
+
+  .hero-buttons {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 12px 17px;
+    font-size: 14px;
+  }
+
+
+  /* Social */
+
+  .social-links {
+    margin-top: 26px;
+    gap: 12px;
+  }
+
+  .social-links a {
+    width: 40px;
+    height: 40px;
+  }
+
+
+  /* Hero Visual */
+
+  .hero-visual {
+    width: 100%;
+    min-height: 360px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  /* Code Card */
+
+  .code-card {
+    width: 100%;
+    max-width: 100%;
+
+    border-radius: 12px;
+
+    transform: none;
+  }
+
+  .code-header {
+    height: 44px;
+    padding: 0 13px;
+  }
+
+  .window-dots {
+    gap: 5px;
+  }
+
+  .window-dots span {
+    width: 9px;
+    height: 9px;
+  }
+
+  .file-name {
     font-size: 11px;
+  }
+
+
+  /* Code Body */
+
+  .code-body {
+    padding: 18px 15px;
+
+    font-size: clamp(9px, 2.7vw, 12px);
     line-height: 1.8;
+
+    overflow-x: auto;
+    white-space: nowrap;
   }
 
   .indent {
-    padding-left: 15px;
+    padding-left: 12px;
   }
 
   .indent-2 {
-    padding-left: 30px;
+    padding-left: 24px;
   }
 
+
+  /* Floating Cards */
+
   .floating-card {
-    font-size: 11px;
-    padding: 8px 10px;
+    padding: 7px 10px;
+
+    gap: 6px;
+
+    font-size: 10px;
+
+    border-radius: 7px;
+  }
+
+  .floating-card span {
+    font-size: 14px;
   }
 
   .card-one {
-    top: 20px;
+    top: 5px;
+    right: 0;
   }
 
   .card-two {
-    left: -5px;
-    bottom: 70px;
+    left: 0;
+    bottom: 60px;
   }
 
   .card-three {
-    right: 0;
+    right: 5px;
+    bottom: 5px;
   }
 }
+
+
+/* ---------- Very Small Phones ---------- */
+
+@media (max-width: 380px) {
+
+  .hero-container {
+    width: 94%;
+    padding-top: 45px;
+  }
+
+  .hero-content h1 {
+    font-size: 33px;
+  }
+
+  .hero-content h2 {
+    font-size: 23px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-visual {
+    min-height: 330px;
+  }
+
+  .code-body {
+    padding: 16px 12px;
+    font-size: 9px;
+  }
+
+  .floating-card {
+    font-size: 9px;
+    padding: 6px 8px;
+  }
+
+  .floating-card span {
+    font-size: 12px;
+  }
+
+  .card-two {
+    left: -2px;
+  }
+
+  .card-three {
+    right: -2px;
+  }
+}
+

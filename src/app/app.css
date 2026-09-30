@@ -1,15 +1,29 @@
+
+/* ================================
+   NAVBAR
+================================ */
+
 .navbar {
   background-color: #071a2f !important;
+
   padding: 8px 35px;
+
   min-height: 82px;
+
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
 }
 
-/* Logo */
+
+/* ================================
+   LOGO
+================================ */
+
 .logo {
   width: 65px;
   height: 65px;
+
   object-fit: contain;
+
   transition: 0.3s ease;
 }
 
@@ -17,59 +31,220 @@
   transform: scale(1.05);
 }
 
-/* Navigation */
+
+/* ================================
+   DESKTOP NAVIGATION
+================================ */
+
 .navbar-nav {
   gap: 8px;
 }
 
 .nav-link {
   position: relative;
+
   color: #e8f1ff !important;
+
   font-size: 16px;
   font-weight: 500;
+
   padding: 12px 17px !important;
+
   transition: 0.3s ease;
 }
 
+
 /* Hover */
+
 .nav-link:hover {
   color: #19c3ff !important;
 }
 
-/* Active link */
+
+/* Active */
+
 .nav-link.active {
   color: #19c3ff !important;
+
   font-weight: 600;
 }
 
-/* Small blue line under active link */
+
+/* Active underline */
+
 .nav-link.active::after {
   content: "";
+
   position: absolute;
+
   left: 17px;
   right: 17px;
+
   bottom: 4px;
+
   height: 2px;
+
   background-color: #19c3ff;
+
   border-radius: 10px;
 }
 
-/* Mobile menu icon */
+
+/* ================================
+   MOBILE TOGGLER
+================================ */
+
 .navbar-toggler {
   border: 1px solid #19c3ff;
+
+  padding: 7px 10px;
+
+  border-radius: 6px;
 }
 
 .navbar-toggler:focus {
   box-shadow: 0 0 0 2px rgba(25, 195, 255, 0.25);
 }
 
-/* Page layout */
+
+/* ================================
+   MOBILE MENU
+================================ */
+
+.navbar-collapse {
+  display: none;
+}
+
+.navbar-collapse.show {
+  display: block;
+}
+
+
+/* ================================
+   PAGE LAYOUT
+================================ */
+
 :host {
   display: flex;
+
   flex-direction: column;
+
   min-height: 100vh;
 }
 
 .main-content {
   flex: 1;
 }
+
+
+/* ================================
+   TABLET + MOBILE
+================================ */
+
+@media (max-width: 991px) {
+
+  .navbar {
+    padding: 8px 20px;
+
+    min-height: 72px;
+  }
+
+
+  /* Logo */
+
+  .logo {
+    width: 58px;
+    height: 58px;
+  }
+
+
+  /* Menu */
+
+  .navbar-collapse {
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 10px 0 15px;
+
+    border-top: 1px solid rgba(25, 195, 255, 0.15);
+  }
+
+
+  .navbar-nav {
+    width: 100%;
+
+    gap: 2px;
+  }
+
+
+  .nav-item {
+    width: 100%;
+  }
+
+
+  .nav-link {
+    width: 100%;
+
+    padding: 12px 15px !important;
+
+    text-align: center;
+
+    border-radius: 6px;
+  }
+
+
+  .nav-link:hover {
+    background-color: rgba(25, 195, 255, 0.08);
+  }
+
+
+  .nav-link.active {
+    background-color: rgba(25, 195, 255, 0.08);
+  }
+
+
+  /* Remove desktop underline */
+
+  .nav-link.active::after {
+    display: none;
+  }
+
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 576px) {
+
+  .navbar {
+    padding: 7px 15px;
+  }
+
+
+  .logo {
+    width: 55px;
+    height: 55px;
+  }
+
+
+  .navbar-toggler {
+    padding: 6px 9px;
+  }
+
+
+  .navbar-collapse {
+    margin-top: 8px;
+  }
+
+
+  .nav-link {
+    font-size: 15px;
+
+    padding: 11px 10px !important;
+  }
+
+}
+

@@ -1,5 +1,12 @@
+
 import { Component, signal } from '@angular/core';
-import { RouterOutlet,RouterLinkActive,RouterLink } from '@angular/router';
+
+import {
+  RouterOutlet,
+  RouterLinkActive,
+  RouterLink
+} from '@angular/router';
+
 import { Home } from '../component/home/home';
 import { About } from '../component/about/about';
 import { Contact } from '../component/contact/contact';
@@ -9,6 +16,7 @@ import { Footer } from '../component/footer/footer';
 
 @Component({
   selector: 'app-root',
+
   imports: [
     RouterOutlet,
     RouterLinkActive,
@@ -19,11 +27,29 @@ import { Footer } from '../component/footer/footer';
     Footer,
     Education,
     Experience
-
   ],
+
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
+
   protected readonly title = signal('myPortfolio');
+
+  // Mobile menu state
+  menuOpen = false;
+
+
+  // Open / Close mobile menu
+  toggleMenu(): void {
+    this.menuOpen = !this.menuOpen;
+  }
+
+
+  // Close menu after clicking a navigation link
+  closeMenu(): void {
+    this.menuOpen = false;
+  }
+
 }
+
